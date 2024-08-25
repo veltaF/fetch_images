@@ -39,3 +39,4 @@ async def find_all_images_on_page(url):
     except aiohttp.ClientError as e:
         logging.error(f"Error fetching the webpage: {e}")
         return []
+        

@@ -30,4 +30,4 @@ async def download_image_to_folder(image_url, folder_path):
 async def download_images_concurrently(image_urls, folder_path):
     tasks = [download_image_to_folder(url, folder_path) for url in image_urls]
     await asyncio.gather(*tasks)
- 
+    
